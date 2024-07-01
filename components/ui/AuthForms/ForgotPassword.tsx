@@ -65,6 +65,8 @@ export default function ForgotPassword({
           Sign in with email and password
         </Link>
       </p>
+
+      {/*
       {allowEmail && (
         <p>
           <Link href="/signin/email_signin" className="font-light text-sm">
@@ -72,6 +74,8 @@ export default function ForgotPassword({
           </Link>
         </p>
       )}
+      */}
+      
       <p>
         <Link href="/signin/signup" className="font-light text-sm">
           Don't have an account? Sign up

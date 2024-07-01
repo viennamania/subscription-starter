@@ -91,12 +91,18 @@ export default async function SignIn({
               disableButton={searchParams.disable_button}
             />
           )}
+
+
           {viewProp === 'update_password' && (
             <UpdatePassword redirectMethod={redirectMethod} />
           )}
+
+          
           {viewProp === 'signup' && (
             <SignUp allowEmail={allowEmail} redirectMethod={redirectMethod} />
           )}
+
+          {/*
           {viewProp !== 'update_password' &&
             viewProp !== 'signup' &&
             allowOauth && (
@@ -105,6 +111,8 @@ export default async function SignIn({
                 <OauthSignIn />
               </>
             )}
+          */}
+
         </Card>
       </div>
     </div>
