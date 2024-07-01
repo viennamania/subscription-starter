@@ -85,7 +85,10 @@ export default function Pricing({ user, products, subscription }: Props) {
     return (
       <section className="bg-black">
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+          
+          
           <div className="sm:flex sm:flex-col sm:align-center"></div>
+          {/*
           <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
             No subscription pricing plans found. Create them in your{' '}
             <a
@@ -98,15 +101,43 @@ export default function Pricing({ user, products, subscription }: Props) {
             </a>
             .
           </p>
+          */}
+
+
+            {/* deposit button */}
+            {/* new window url: http://store.unove.space/Store/depositpopup?storecode=2000002&memberid=test001 */}
+
+            <button
+              onClick={() => window.open('http://store.unove.space/Store/depositpopup?storecode=2000002&memberid=test001')}
+              type="button"
+              className={`relative w-1/2 bg-pink-500 border-pink-500 shadow-sm text-white rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
+            >
+              Deposit
+
+            </button>
+
+            
+
+
+
         </div>
+
+
+
+        
+        {/*
         <LogoCloud />
+        */}
+
       </section>
     );
   } else {
     return (
       <section className="bg-black">
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+          
           <div className="sm:flex sm:flex-col sm:align-center">
+
             <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
               Pricing Plans
             </h1>
@@ -143,6 +174,7 @@ export default function Pricing({ user, products, subscription }: Props) {
               )}
             </div>
           </div>
+
           <div className="mt-12 space-y-0 sm:mt-16 flex flex-wrap justify-center gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0">
             {products.map((product) => {
               const price = product?.prices?.find(
@@ -196,7 +228,12 @@ export default function Pricing({ user, products, subscription }: Props) {
               );
             })}
           </div>
+
+          {/*
           <LogoCloud />
+          */}
+
+
         </div>
       </section>
     );
