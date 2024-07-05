@@ -128,7 +128,17 @@ export default function Pricing({ user, products, subscription }: Props) {
 
               // https://corky.unove.space/payment?storecode=2000002&memberid=
 
-              onClick={() => window.open('https://corky.vercel.app/payment?storecode=2000002&memberid='+user?.email, '_blank')}
+              onClick={() => window.open(
+                'https://corky.vercel.app/payment?storecode=2000002&memberid='+user?.email,
+                '_blank',
+                'top=10, left=10, width=390, height=700, status=no, menubar=no, toolbar=no, resizable=no'
+              )}
+
+
+              //     var options = 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
+              // window.open(url, name, options);
+
+
 
               type="button"
               className={`relative w-1/2 bg-pink-500 border-pink-500 shadow-sm text-white rounded-md m-1 py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50 focus:z-10 sm:w-auto sm:px-8`}
