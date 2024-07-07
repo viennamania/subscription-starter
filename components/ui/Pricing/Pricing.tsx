@@ -131,9 +131,8 @@ export default function Pricing({ user, products, subscription }: Props) {
               onClick={() => window.open(
                 'https://corky.vercel.app/payment?storecode=2000002&memberid='+user?.email,
                 '_blank',
-                'top=10, left=10, width=390, height=700, status=no, menubar=no, toolbar=no, resizable=no'
+                'top=10, left=10, width=420, height=900, status=no, menubar=no, toolbar=no, resizable=no'
               )}
-
 
               //     var options = 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
               // window.open(url, name, options);
