@@ -129,7 +129,11 @@ export default function Pricing({ user, products, subscription }: Props) {
               // https://corky.unove.space/payment?storecode=2000002&memberid=
 
               onClick={() => window.open(
-                'https://corky.vercel.app/payment?storecode=2000002&memberid='+user?.email,
+
+                //'https://corky.vercel.app/payment?storecode=2000002&memberid='+user?.email,
+
+                "https://best.goodtether.com/kr/polygon/pay-usdt/0?storeUser=" + user?.email + "@2001001&depositName=%EC%9A%B0%EC%98%81%EC%9A%B0&depositBankName=%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC",
+
                 '_blank',
                 'top=10, left=10, width=420, height=900, status=no, menubar=no, toolbar=no, resizable=no'
               )}
