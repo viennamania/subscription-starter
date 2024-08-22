@@ -150,8 +150,6 @@ export default function Pricing({ user, products, subscription }: Props) {
 
             </button>
 
-            
-
 
 
         </div>
